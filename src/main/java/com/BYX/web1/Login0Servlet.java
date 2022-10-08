@@ -41,8 +41,8 @@ public class Login0Servlet extends HttpServlet {
                 Cookie c_username=new Cookie("username",username);
                 Cookie c_password=new Cookie("password",password);
                 //设置存活时间
-                c_username.setMaxAge(60*60*24*365);
-                c_password.setMaxAge(60*60*24*365);
+                c_username.setMaxAge(60*60*24*400);
+                c_password.setMaxAge(60*60*24*400);
                 //发送cookie
                 response.addCookie(c_username);
                 response.addCookie(c_password);
