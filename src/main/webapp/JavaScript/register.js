@@ -36,8 +36,8 @@ repasswordInput.onblur = checkrepassword;
 function checkrepassword() {
     let password = passwordInput.value.trim();
     let repassword = repasswordInput.value.trim();
-
-    if (password == repassword) {
+    var flag=password == repassword;
+    if (flag) {
         document.getElementById("password-different").style.display = 'none';
     } else {
         document.getElementById("password-different").style.display = '';
@@ -78,12 +78,7 @@ function checkemail() {
 }
 
 //表单
-/*let registerForm = document.getElementById("register-form");
+let registerForm = document.getElementById("register-form");
 registerForm.onsubmit = function () {
     return checkUserName() && checkpassword() && checkrepassword() && checkphoneNumber() && checkemail();
-}*/
-var errori=location.search;// ?error=yes
-let s = errori.substr(7,3);
-if (s=='yes'){
-    alert("用户名已存在！");
 }
