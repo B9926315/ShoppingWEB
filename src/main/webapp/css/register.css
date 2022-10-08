@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../images/bg1.jpg") no-repeat fixed center;
+    background-size: 100%;
+    font-family:"楷体","微软雅黑","Times New Roman";
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #383838;
+}
+a:hover{
+    color: #f90e0e;
+}
+input{
+    outline: none;
+    border-radius: 6px;
+    font-family: "楷体";
+    font-size: 20px;
+}
+.navigation{
+    /*顶部导航栏*/
+    height: 50px;
+    padding-top: 8px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    font-family: '楷体';
+    font-size: 40px;
+    margin: 0 auto;
+}
+.register-div{
+    width: 450px;
+    height: 442px;
+    background: rgba(236,221,220,.8);
+    margin: 100px auto;
+    border-radius: 20px;
+    box-shadow:  10px 10px 10px -4px rgba(33, 33, 33, 0.7);
+    position: relative;
+}
+.register-div ul li{
+    margin-bottom: 15px;
+}
+.register-div ul li label{
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+.register-div ul li .inp{
+    height: 37px;
+    border: 1px solid #ccc;
+}
+.register-div ul li #username{
+    margin-top: 20px;
+}
+.register-div ul li #Verification-code{/*验证码图片*/
+    position: absolute;
+    left: 160px;
+    display: block;
+}
+.register-div ul #userKind{
+    margin-top: 15px;
+}
+.register-div ul li #submit{
+    width: 80px;
+    height: 50px;
+    background-color: #45f117;
+    border: none;
+    border-radius: 5px;
+    font-family: "楷体";
+    font-size: 25px;
+    position: absolute;
+    left: 80px;
+    top: 318px;
+    cursor: pointer;
+}
+.register-div ul li #submit:hover{
+    border-radius: 10px;
+    width: 78px;
+    height: 48px;
+    left: 81px;
+    top: 319px;
+    transition: width .2s,height .2s,left .2s,top .2s ease 0.1s;
+}
+.register-div ul li #submit:active{
+    background-color: #35ff00;
+}
+.register-div ul li #reset{/*重置按钮*/
+    width: 80px;
+    height: 50px;
+    background-color: #6ca6ad;
+    border: none;
+    border-radius: 5px;
+    font-family: "楷体";
+    font-size: 25px;
+    position: absolute;
+    left: 270px;
+    top: 318px;
+    cursor: pointer;
+}
+.register-div ul li #reset:hover{
+    border-radius: 10px;
+    width: 78px;
+    height: 48px;
+    left: 271px;
+    top: 319px;
+    transition: width .2s,height .2s,left .2s,top .2s ease 0.1s;
+}
+.register-div ul li #reset:active{
+    background-color: #739da2;
+}
+.ul{
+    margin-left: 40px;
+}
+.register-div ul li .special0{
+    display: inline-block;
+    text-align: right;
+}
+.register-div ul li .special1{
+    display: inline-block;
+    width: 50px;
+}
+/*登录链接*/
+#register-login{
+    position: absolute;
+    top: 399px;
+}
+.error{
+    font-family: "微软雅黑";
+    font-size: 12px;
+    color: #ff0718;
+}
+.register-div #register-form .ul li #Error{
+    text-align: center;
+    color: #f12222;
+    font-family: "楷体";
+    font-size: 19px;
+    margin-left: -53px;
+    cursor: default;
+}

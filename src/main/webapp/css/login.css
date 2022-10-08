@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:url("../images/bg.jpg") no-repeat fixed center;
+    background-size: 100%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+a:hover{
+    color: #f90e0e;
+}
+.login{
+    width: 370px;
+    height: 325px;
+    background: rgba(114,179,224,.7);
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+    margin: 200px auto;
+}
+.login .login-font{
+    text-align: center;
+    font-weight: 500;
+    font-family: '楷体';
+    font-size: 71px;
+    cursor: default;
+}
+.code{
+    height: 30px;
+    vertical-align: middle;
+}
+.login-box{
+    /*登录按钮*/
+    cursor: pointer;
+    text-align: center;
+    background-color: #7ce817;
+    width: 73px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+}
+.login-box:hover{
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+    transition: all 0.2s;
+}
+.login-td{
+    text-align: right;
+}
+.special0{
+    font-family: '楷体';
+    font-size: 24px;
+}
+.left-td{
+    width: 128px;
+}
+.reset-box{
+    /*重置按钮*/
+    text-align: center;
+    background-color: #d7e5c8;
+    width: 73px;
+    height: 37px;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.reset-box:hover{
+    box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+    transition: all 0.2s;
+}
+.input{
+    height: 30px;
+    border: 0;
+    outline: none;
+    border-radius: 6px;
+}
+.input-tr{
+    height: 43px;
+}
+.customer-span{
+    cursor: default;
+}
+#login-top{
+    height: 20px;
+    margin-top: 10px;
+}
+.no-username{
+    text-align: right;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+#rememberTD{
+    font-family: "楷体";
+    font-size: 24px;
+    text-align: center;
+}
+#backInformation{
+    text-align: center;
+    color: #f12222;
+    font-family: "楷体";
+    font-size: 15px;
+    margin-left: 132px;
+    cursor: default;
+}
+#backInformation1{
+    text-align: center;
+    color: #f12222;
+    font-family: "楷体";
+    font-size: 15px;
+    margin-left: -8px;
+    cursor: default;
+}
+

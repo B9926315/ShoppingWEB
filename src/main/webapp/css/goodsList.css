@@ -1,0 +1,176 @@
+/* 把我们所有标签的内外边距清零 */
+* {
+    margin: 0;
+    padding: 0
+}
+
+/* em 和 i 斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal
+}
+
+/* 去掉li 的小圆点 */
+li {
+    list-style: none
+}
+
+img {
+    /* 取消图片底侧有空白缝隙的问题 */
+    vertical-align: middle
+}
+
+button {
+    /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+    cursor: pointer
+}
+
+a {
+
+    text-decoration: none
+}
+
+a:hover {
+    color: #c81623
+}
+button{
+    cursor: pointer;
+}
+body {
+    /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+    -webkit-font-smoothing: antialiased;
+    background:url("../images/river.jpg") no-repeat fixed;
+    background-size: 100%;
+    font: 12px/1.5 "仿宋",Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+    color: #181818
+}
+
+.hide,
+.none {
+    display: none
+}
+
+/* 清除浮动 */
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0
+}
+
+.clearfix {
+    *zoom: 1
+}
+/*表格标题*/
+#goodsListTableTitle{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+    cursor: default;
+}
+/*表格*/
+#goodsListTable {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    background-color: rgba(233,204,211,.85);
+box-shadow: 10px 10px 10px -4px rgba(0,0,0,.3);
+}
+table,th,td{
+    border: 1px solid ;
+    border-collapse: collapse;
+    padding: 6px;
+}
+th{
+    height: 50px;
+}
+td{
+    height: 45px;
+}
+th,td:hover{
+    cursor: default;
+}
+/*新增商品按钮*/
+#addGoods{
+    margin-left: 160px;
+    background-color: #a5d2f3;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    font-family: "仿宋";
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#addGoods:hover{
+    background-color: #9bcbee;
+    height: 42px;
+    width: 102px;
+    margin-left: 158px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-size: 21px;
+    transition: all 0.2s;
+}
+/*阅读模式颜色*/
+.bgc{
+    background-color: #f3a3b6;
+}
+/*所有的输入框*/
+input{
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5%;
+}
+/*搜索区域表单*/
+#searchForm{
+    margin-left: 160px;
+    font-size: 20px;
+}
+/*状态选择下拉菜单*/
+#status{
+    width: 70px;
+    height: 30px;
+    border: none;
+    font-family: "楷体";
+    border-radius: 5%;
+}
+#searchForm #searchSubmit{
+    cursor: pointer;
+    font-family: "楷体";
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #ff6700;
+}
+#searchForm #searchSubmit:hover{
+    background-color: #ef6202;
+    transition: all 0.2s;
+}
+#AllBTN{
+    margin-left: 50px;
+    background-color: #a5d2f3;
+    border: none;
+    border-radius: 15%;
+    cursor: pointer;
+    height: 40px;
+    width: 100px;
+    font-family: "仿宋";
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#AllBTN:hover{
+    background-color: #9bcbee;
+    font-size: 20px;
+    transition: all 0.2s;
+}
+#brandName{
+    font-family: "楷体";
+}

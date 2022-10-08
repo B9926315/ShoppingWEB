@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.BYX.mapper.GoodsMapper">
+
+    <select id="selectByConditions" resultType="com.BYX.pojo.Goods">
+        select * from byx.shopping
+        <where>
+            <if test="status!=null and status!='' ">
+                and status=#{status}
+            </if>
+            <if test="name!=null and name!='' ">
+                and name like #{name}
+            </if>
+            <if test="priceMin!=null and priceMin!='' ">
+                and price &gt;=#{priceMin}
+            </if>
+            <if test="priceMax!=null and priceMax!='' ">
+                and price &lt;= #{priceMax}
+            </if>
+            <if test="numberMin!=null and numberMin!='' ">
+                and number &gt;= #{numberMin}
+            </if>
+            <if test="numberMax!=null and numberMax!='' ">
+                and number &lt;= #{numberMax}
+            </if>
+        </where> order by `rank` desc
+    </select>
+</mapper>
