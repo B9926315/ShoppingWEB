@@ -11,8 +11,4 @@ function checkPasswordLogin() {
     let password = passwordInput.value.trim();
     return password == "";
 }
-var loginForm = document.getElementById("login-form");
-loginForm.onsubmit=function () {
-    return checkUserNameLogin() && checkPasswordLogin();
-}
 
